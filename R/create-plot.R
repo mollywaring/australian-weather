@@ -15,7 +15,7 @@ scatter_plot =
 df %>%
   filter(Location == city) %>%
   ggplot(aes(x = Temp9am, y = Humidity9am)) + 
-  geom_point(colour="purple")
+  geom_point(colour="green")
 
 # Save the plot in graphics/hi
 ggsave(filename = "graphics/scatter-temp-humidity.png", plot = scatter_plot)
